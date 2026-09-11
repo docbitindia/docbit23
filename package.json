@@ -1,0 +1,36 @@
+{
+  "name": "docbit",
+  "private": true,
+  "version": "1.1.1",
+  "description": "DocBit \u2014 professional data preparation workspace for Excel, CSV and JSON with cloud projects, editing, exports and collaboration.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test:product": "node scripts/test-product-model.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "papaparse": "^5.4.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "xlsx": "^0.18.5",
+    "jszip": "^3.10.1",
+    "@supabase/supabase-js": "^2.57.0",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/papaparse": "^5.3.14",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2"
+  }
+}
